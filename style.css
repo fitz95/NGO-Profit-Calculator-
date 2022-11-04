@@ -1,0 +1,28 @@
+body {
+    background-color:black;
+    font-family:arial;
+    color: white;
+}
+h1{color:grey;}
+
+.maindiv{
+    background-color: white;
+    color:black;
+    width: 400px;
+    padding:20px;
+    border-radius:25px;
+    align:center
+
+}
+label {
+    
+    font-weight: bold;
+    width: 130px;
+    float: left;
+  
+  }
+  label:after { content: ": " }
+
+  p{
+    margin-top:20px;
+  }

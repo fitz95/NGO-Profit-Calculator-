@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NGO Bank APP</title>
+    
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class='maindiv'>
+
+        <div class='Heading'>
+        <h1>Simple Interest Calculator</h1>
+
+        </div>
+        
+        <div class ="form">
+            <p></p>
+        <label for='principal'>Amount</label> <input type="number" onchange='checkPrincipal()'   id="principal">  <br>
+        </p>
+        <p>
+        <label for =''rate>Rate</label> <input type="range"  oninput='updateRate()' id="rate" min='1' max='20' value='10.25' step='0.25'><span id="rate_val">10.25%</span><br/>
+        </p>
+        <p>
+        <label for='years'>No. of Years</label> <select  id="years">
+        <option vlaue='1'>1</option>
+        <option vlaue='2'>2</option>
+        <option vlaue='3'>3</option>
+        <option vlaue='4'>4</option>
+        <option vlaue='5'>5</option>
+        <option vlaue='6'>6</option>
+        <option vlaue='7'>7</option>
+        <option vlaue='8'>8</option>
+        <option vlaue='9'>9</option>
+        <option vlaue='10'>10</option>
+        </select> <br/>
+        </p>
+        <p>
+            <button onclick="compute()" type='submit'>Compute</button><br/><br/><span id="result" class='compute'></span>
+        </p>
+        </div>
+        
+        
+        
+        <footer>
+            &#169; This Calculator belongs to Fitz Gerald
+        </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html
